@@ -1,0 +1,96 @@
+Items: {
+	EoCinfinite: {
+		DisplayName: Dubious Looking Eye
+		Tooltip: The evil presence watches...
+	}
+
+	KSinfinite: {
+		DisplayName: Dubious Looking Crown
+		Tooltip: A powerful force to swallow all things...
+	}
+
+	EoWinfinite: {
+		DisplayName: Dubious Worm Food
+		Tooltip: Conceived from the bottomless malice of the Corruption...
+	}
+
+	BoCinfinite: {
+		DisplayName: Dubious Looking Spine
+		Tooltip: A vile mastermind pulsing with agony...
+	}
+
+	QueenBeeinfinite: {
+		DisplayName: Dubious Abeemination
+		Tooltip: Matriarch of the Jungle's hives...
+	}
+
+	Deerclopsinfinite: {
+		DisplayName: Dubious Deer Thing
+		Tooltip: The one-eyed monstrosity...
+	}
+
+	Skeletroninfinite: {
+		DisplayName: Dubious Clothier Voodoo Doll
+		Tooltip: You just might be strong enough to free me from my curse...
+	}
+
+	WoFinfinite: {
+		DisplayName: Dubious Guide Voodoo Doll
+		Tooltip: The master and core of the world...
+	}
+
+	QSinfinite: {
+		DisplayName: Dubious Looking Crystal
+		Tooltip: A haughty, crushing force adorned in dazzling crystals...
+	}
+
+	Destroyerinfinite: {
+		DisplayName: Dubious Mechanical Worm
+		Tooltip: You feel vibrations from deep below...
+	}
+
+	Twinsinfinite: {
+		DisplayName: Dubious Mechanical Eye
+		Tooltip: This is going to be a terrible night...
+	}
+
+	SkeletronPrimeinfinite: {
+		DisplayName: Dubious Mechanical Skull
+		Tooltip: The air is getting colder around you...
+	}
+
+	Mechdusainfinite: {
+		DisplayName: Dubious Ocram's Razor
+		Tooltip: Surely, there is a simple explanation for this...
+	}
+
+	Planterainfinite: {
+		DisplayName: Dubious Pink Bulb
+		Tooltip: Powerful floral guardian awoken by the fallout of Cthulhu's destroyed machinations...
+	}
+
+	Goleminfinite: {
+		DisplayName: Dubious Power Cell
+		Tooltip: A remarkable display of ingenuity...
+	}
+
+	DukeFishroninfinite: {
+		DisplayName: Dubious Truffle Worm
+		Tooltip: An aquatic pigron mutation from the depths of the ocean...
+	}
+
+	EoLinfinite: {
+		DisplayName: Dubious Prismatic Lacewing
+		Tooltip: A vengeful fae goddess bent on scrubbing the land of any and all impurity...
+	}
+
+	Cultistinfinite: {
+		DisplayName: Dubious Cult Paraphernalia
+		Tooltip: A fanatical leader hell-bent on brining about the apocalypse...
+	}
+
+	MLinfinite: {
+		DisplayName: Dubious Celestial Sigil
+		Tooltip: A mastermind behind all terrors which befall the world...
+	}
+}

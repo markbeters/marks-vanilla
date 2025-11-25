@@ -93,4 +93,21 @@ Items: {
 		DisplayName: Dubious Celestial Sigil
 		Tooltip: A mastermind behind all terrors which befall the world...
 	}
+
+	WormBGone: {
+		Tooltip: Removes Worms (and Ghosts!)
+		DisplayName: Worm-B-Gone
+	}
+}
+
+Buffs: {
+	WormBGone: {
+		Description: Removes Worms (and Ghosts!)
+		DisplayName: Worm-B-Gone
+	}
+}
+
+GlobalBuffs: {
+	CannotCancel: Mods.MarksVanilla.GlobalBuffs.CannotCancel
+	RemainingTime: Mods.MarksVanilla.GlobalBuffs.RemainingTime
 }

@@ -21,11 +21,11 @@ namespace MarksVanilla.Common.GlobalNPCs
             int wormBGoneType = ModContent.BuffType<WormBGone>();
             bool has = spawnInfo.Player.HasBuff(wormBGoneType);
 
-            Main.NewText($"[GlobalSpawns] Player.HasBuff(WormBGone) = {has}"); // visible in-game
+            //Main.NewText($"[GlobalSpawns] Player.HasBuff(WormBGone) = {has}"); // visible in-game
 
             if (has)
             {
-                spawnInfo.Lihzahrd = true;
+                //spawnInfo.Lihzahrd = true;
                 spawnInfo.PlayerSafe = true;
             }
 

@@ -98,6 +98,11 @@ Items: {
 		Tooltip: Removes Worms (and Ghosts!)
 		DisplayName: Worm-B-Gone
 	}
+
+	AnglerReset: {
+		DisplayName: Angler Reset
+		Tooltip: ""
+	}
 }
 
 Buffs: {

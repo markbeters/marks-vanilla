@@ -15,9 +15,13 @@ namespace MarksVanilla.Content.NPCs
 
             Main.anglerQuestFinished = false; // Reset the quest completion status
             Main.anglerWhoFinishedToday.Clear(); // remove all players from finished list
+            Main.AnglerQuestSwap(); //swap quest
+            
+            
+            //Random rnd = new Random(); //pick a new quest, this assumes the array isn't filled with unobtainable fish though
+            // EDIT: THIS CONTAINS UNOBTAINABLE FISH. USE AnglerQuestSwap() INSTEAD.
 
-            Random rnd = new Random(); //pick a new quest, this assumes the array isn't filled with unobtainable fish though
-            Main.anglerQuest = rnd.Next(0, Main.anglerQuestItemNetIDs.Length - 1);
+            //Main.anglerQuest = rnd.Next(0, Main.anglerQuestItemNetIDs.Length - 1);
 
         }
     }

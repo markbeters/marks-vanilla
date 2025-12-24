@@ -1,10 +1,8 @@
-using ExampleMod.Content.Items.Mounts;
-using ExampleMod.Content.Pets.ExampleLightPet;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ExampleMod.Common.Systems
+namespace MarksVanilla.Common.Systems
 {
 	// This class showcases adding additional items to vanilla chests. Taken from Example Mod and modified for desert chests.
 	

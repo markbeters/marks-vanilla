@@ -14,7 +14,7 @@ namespace MarksVanilla.Common.Systems
             int[] itemsToPlaceInSandstoneChests = [ItemID.Oyster];
             int itemsToPlaceInSandstoneChestsChoice = 0; //leave as 0 since we're only adding oysters for now
 			int itemsPlaced = 0;
-			int maxItems = 50;
+			int maxItems = 75;
 			// Loop over all the chests
 			for (int chestIndex = 0; chestIndex < Main.maxChests; chestIndex++) {
 				Chest chest = Main.chest[chestIndex];
@@ -33,10 +33,15 @@ namespace MarksVanilla.Common.Systems
 					// Next we need to find the first empty slot for our item
 					for (int inventoryIndex = 0; inventoryIndex < Chest.maxItems; inventoryIndex++) {
 						if (chest.item[inventoryIndex].type == ItemID.None) {
-							// Place the item
+							// Place the item (type)
 							chest.item[inventoryIndex].SetDefaults(itemsToPlaceInSandstoneChests[itemsToPlaceInSandstoneChestsChoice]);
 
+							// Put multiple of the same item in this slot by setting stack (respect maxStack)
+							int desiredAmount = WorldGen.genRand.Next(1, 6); // 1..5 oysters example
+							chest.item[inventoryIndex].stack = System.Math.Min(desiredAmount, chest.item[inventoryIndex].maxStack);
+
 							itemsPlaced++;
+
 							break;
 						}
 					}

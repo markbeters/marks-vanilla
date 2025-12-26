@@ -100,7 +100,14 @@ Items: {
 	}
 
 	AnglerReset: {
-		DisplayName: Angler Reset
+		DisplayName: Angler Bribe
+		Description: Swaps and resets an active Angler quest
+		Tooltip: This can't be legally binding
+	}
+
+	ShimmerCompass: {
+		DisplayName: Shimmer Compass
+		Description: Summons a magical crystal that points to the Aether
 		Tooltip: ""
 	}
 }
@@ -116,3 +123,5 @@ GlobalBuffs: {
 	CannotCancel: Mods.MarksVanilla.GlobalBuffs.CannotCancel
 	RemainingTime: Mods.MarksVanilla.GlobalBuffs.RemainingTime
 }
+
+Projectiles.AetherPointer.DisplayName: Aether Pointer

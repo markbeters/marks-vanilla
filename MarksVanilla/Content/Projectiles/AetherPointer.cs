@@ -114,7 +114,7 @@ namespace MarksVanilla.Content.Projectiles
 
 
             // Create a white (1.0, 1.0, 1.0) light at the torch's approximate position, when the item is held.
-			Vector2 roughPos = player.RotatedRelativePoint(new Vector2(player.itemLocation.X + 12f * player.direction + player.velocity.X, player.itemLocation.Y - 14f + player.velocity.Y), true);
+			Vector2 roughPos = player.RotatedRelativePoint(new Vector2(player.itemLocation.X + 50f * player.direction + player.velocity.X, player.itemLocation.Y - 50f + player.velocity.Y), true);
 
 			Lighting.AddLight(roughPos, 1f, 1f, 1f);
 

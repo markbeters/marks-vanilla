@@ -52,6 +52,7 @@ namespace MarksVanilla.Common.Players
         public override void UpdateArmorSet(Player player, string set)
         {
             player.setBonus = "Refunds 4 mana per attack";
+            // other functionalities that change the player's stats directly/passively should be added here.
 
             //player.GetDamage(DamageClass.Generic) += AdditiveGenericDamageBonus / 100f; // 2000% dmg boost
         }

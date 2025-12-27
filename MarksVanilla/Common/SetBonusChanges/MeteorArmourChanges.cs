@@ -56,7 +56,7 @@ namespace MarksVanilla.Common.Players
 
             //player.GetDamage(DamageClass.Generic) += AdditiveGenericDamageBonus / 100f; // 2000% dmg boost
         }
-        
+
 
         public override bool Shoot(Item item, Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
@@ -67,7 +67,7 @@ namespace MarksVanilla.Common.Players
                 {
                     player.statMana = player.statManaMax;
                 }
-                
+
             }
             return true; //make sure to return true, we only want to override Shoot when our set bonus is the meteor armour's
 

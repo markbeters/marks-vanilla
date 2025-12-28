@@ -37,7 +37,9 @@ namespace MarksVanilla.Common.Players
 
         public override bool Shoot(Item item, Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            if (player.setBonus == "Refunds 4 mana per attack")
+            bool isMagic = item.DamageType == DamageClass.Magic || item.CountsAsClass(DamageClass.Magic);
+            
+            if (player.setBonus == "Refunds 4 mana per attack" && isMagic)
             {
                 player.statMana += ManaRefund; //give 4 mana for a shot
                 if (player.statMana > player.statManaMax) //if we exceed max, cap it at the max

@@ -15,30 +15,8 @@ namespace MarksVanilla.Common.Players
     public class MeteorArmourChanges : GlobalItem
     {
 
-        public static readonly int AdditiveGenericDamageBonus = 2000;
         public static readonly int ManaRefund = 4;
-
-		//public static LocalizedText SetBonusText { get; private set; }   None of the helmet mods are required, this is a good example though
-
-        /*
-        public override bool AppliesToEntity(Item item, bool lateInstantiation)
-        {
-
-            return item.type == ItemID.MeteorHelmet; // grab the int id for MeteorHelmet
-        } 
-
-        
-        public override void SetStaticDefaults()
-        {
-            //SetBonusText = this.GetLocalization("SetBonus").WithFormatArgs(AdditiveGenericDamageBonus);
-
-        }
-        public override void SetDefaults(Item item)
-        {
-            item.defense = 70;
-            item.wornArmor = true;
-        } */
-
+      
 
         public override string IsArmorSet(Item head, Item body, Item legs) {
             if (head.type == ItemID.MeteorHelmet && body.type == ItemID.MeteorSuit && legs.type == ItemID.MeteorLeggings)
@@ -54,7 +32,6 @@ namespace MarksVanilla.Common.Players
             player.setBonus = "Refunds 4 mana per attack";
             // other functionalities that change the player's stats directly/passively should be added here.
 
-            //player.GetDamage(DamageClass.Generic) += AdditiveGenericDamageBonus / 100f; // 2000% dmg boost
         }
 
 

@@ -16,8 +16,8 @@ namespace MarksVanilla.Content.NPCs
             Main.anglerQuestFinished = false; // Reset the quest completion status
             Main.anglerWhoFinishedToday.Clear(); // remove all players from finished list
             Main.AnglerQuestSwap(); //swap quest
-            
-            
+
+            Main.NewText("Angler: Fine, only because you're paying me!");
             //Random rnd = new Random(); //pick a new quest, this assumes the array isn't filled with unobtainable fish though
             // EDIT: THIS CONTAINS UNOBTAINABLE FISH. USE AnglerQuestSwap() INSTEAD.
 

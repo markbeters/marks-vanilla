@@ -7,12 +7,6 @@ using MarksVanilla.Content.NPCs;
 namespace MarksVanilla.Content.Items.Consumables
 
 
-/*
- THIS IS NOT A PERMANENT ITEM. SHOULD DELETE WHEN DONE
-
-*/
-
-
 {
 	public class AnglerReset : ModItem
 	{
@@ -26,14 +20,14 @@ namespace MarksVanilla.Content.Items.Consumables
             Item.width = 20;
             Item.height = 26;
             Item.useStyle = ItemUseStyleID.HoldUp;
-            Item.useAnimation = 15;
-            Item.useTime = 15;
+            Item.useAnimation = 25;
+            Item.useTime = 25;
             Item.useTurn = true;
             Item.UseSound = SoundID.SplashWeak;
             Item.maxStack = 999;
             Item.consumable = true;
             Item.rare = ItemRarityID.White;
-            Item.value = Item.buyPrice(0, 0, 50, 0);
+            Item.value = Item.buyPrice(0, 5, 0, 0);
         }
 
         public override bool? UseItem(Player player)

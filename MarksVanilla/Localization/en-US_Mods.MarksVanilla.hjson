@@ -110,6 +110,36 @@ Items: {
 		Description: Summons a magical crystal that points to the Aether
 		Tooltip: ""
 	}
+
+	TopazBullet: {
+		Tooltip: Well, this is just ridiculous... but shiny!
+		DisplayName: Topaz Bullet
+	}
+
+	SapphireBullet: {
+		Tooltip: Well, this is just ridiculous... but shiny!
+		DisplayName: Sapphire Bullet
+	}
+
+	RubyBullet: {
+		Tooltip: Well, this is just ridiculous... but shiny!
+		DisplayName: Ruby Bullet
+	}
+
+	EmeraldBullet: {
+		Tooltip: Well, this is just ridiculous... but shiny!
+		DisplayName: Emerald Bullet
+	}
+
+	DiamondBullet: {
+		Tooltip: Well, this is just ridiculous... but shiny!
+		DisplayName: Diamond Bullet
+	}
+
+	AmethystBullet: {
+		Tooltip: Well, this is just ridiculous... but shiny!
+		DisplayName: Amethyst Bullet
+	}
 }
 
 Buffs: {
@@ -124,4 +154,12 @@ GlobalBuffs: {
 	RemainingTime: Mods.MarksVanilla.GlobalBuffs.RemainingTime
 }
 
-Projectiles.AetherPointer.DisplayName: Aether Pointer
+Projectiles: {
+	AetherPointer.DisplayName: Aether Pointer
+	TopazBullet.DisplayName: Topaz Bullet
+	SapphireBullet.DisplayName: Sapphire Bullet
+	RubyBullet.DisplayName: Ruby Bullet
+	EmeraldBullet.DisplayName: Emerald Bullet
+	DiamondBullet.DisplayName: Diamond Bullet
+	AmethystBullet.DisplayName: Amethyst Bullet
+}

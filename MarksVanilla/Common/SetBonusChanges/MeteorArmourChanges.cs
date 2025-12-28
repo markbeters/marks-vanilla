@@ -37,8 +37,8 @@ namespace MarksVanilla.Common.Players
 
         public override bool Shoot(Item item, Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
         {
-            bool isMagic = item.DamageType == DamageClass.Magic || item.CountsAsClass(DamageClass.Magic);
-            
+            bool isMagic = item.DamageType == DamageClass.Magic || item.CountsAsClass(DamageClass.Magic); //this makes sure mana cannot be refunded for swinging a sword or placing a block
+
             if (player.setBonus == "Refunds 4 mana per attack" && isMagic)
             {
                 player.statMana += ManaRefund; //give 4 mana for a shot

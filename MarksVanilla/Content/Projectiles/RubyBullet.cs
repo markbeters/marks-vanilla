@@ -33,7 +33,8 @@ namespace MarksVanilla.Content.Projectiles
 			Projectile.ignoreWater = false; 
 			Projectile.tileCollide = true;
             Projectile.extraUpdates = 0; 
-            
+            Projectile.usesLocalNPCImmunity = true; //these lines help with multiple projectiles, like shotguns
+            Projectile.localNPCHitCooldown = 20;
 
 
 			AIType = ProjectileID.Bullet; // Act exactly like default Bullet

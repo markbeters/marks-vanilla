@@ -32,7 +32,9 @@ namespace MarksVanilla.Content.Projectiles
 			Projectile.light = 0.75f; // How much light emit around the projectile
 			Projectile.ignoreWater = false; 
 			Projectile.tileCollide = true;
-            Projectile.extraUpdates = 0;
+			Projectile.extraUpdates = 0;
+			Projectile.usesLocalNPCImmunity = true; //these lines help with multiple projectiles, like shotguns
+            Projectile.localNPCHitCooldown = 20;
             
 
 

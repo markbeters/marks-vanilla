@@ -70,7 +70,7 @@ namespace MarksVanilla.Content.Items.BossSummons
 
         public override void AddRecipes() { //use chaining method to add the recipe for this item
 			CreateRecipe()
-				.AddIngredient(ItemID.ClothierVoodooDoll, 5) //this should be replaced with a custom item that drops upon breaking bulbs
+				.AddIngredient(ItemID.LifeFruit, 15) //this should be replaced with a custom item that drops upon breaking bulbs
                 .AddIngredient(ItemID.SoulofLight, 10)
                 .AddIngredient(ItemID.SoulofNight, 10)
 				.AddIngredient(ItemID.SoulofMight, 10)

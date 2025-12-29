@@ -101,44 +101,56 @@ Items: {
 
 	AnglerReset: {
 		DisplayName: Angler Bribe
-		Description: Swaps and resets an active Angler quest
-		Tooltip: This can't be legally binding
+		Description: ""
+		Tooltip:
+			'''
+			Swaps and resets an active Angler Quest
+			'This can't be legally binding'
+			'''
 	}
 
 	ShimmerCompass: {
 		DisplayName: Shimmer Compass
-		Description: Summons a magical crystal that points to the Aether
-		Tooltip: ""
+		Tooltip: Summons a magical crystal that points to the Aether
 	}
 
 	TopazBullet: {
-		Tooltip: Well, this is just ridiculous... but shiny!
+		Tooltip: "'Well, this is just ridiculous... but shiny!'"
 		DisplayName: Topaz Bullet
 	}
 
 	SapphireBullet: {
-		Tooltip: Well, this is just ridiculous... but shiny!
+		Tooltip: "'Well, this is just ridiculous... but shiny!'"
 		DisplayName: Sapphire Bullet
 	}
 
 	RubyBullet: {
-		Tooltip: Well, this is just ridiculous... but shiny!
+		Tooltip: "'Well, this is just ridiculous... but shiny!'"
 		DisplayName: Ruby Bullet
 	}
 
 	EmeraldBullet: {
-		Tooltip: Well, this is just ridiculous... but shiny!
+		Tooltip: "'Well, this is just ridiculous... but shiny!'"
 		DisplayName: Emerald Bullet
 	}
 
 	DiamondBullet: {
-		Tooltip: Well, this is just ridiculous... but shiny!
+		Tooltip: "'Well, this is just ridiculous... but shiny!'"
 		DisplayName: Diamond Bullet
 	}
 
 	AmethystBullet: {
-		Tooltip: Well, this is just ridiculous... but shiny!
+		Tooltip: "'Well, this is just ridiculous... but shiny!'"
 		DisplayName: Amethyst Bullet
+	}
+
+	BonePhone: {
+		DisplayName: Bone Phone
+		Tooltip:
+			'''
+			Innuendo
+			Calls the nearest Skeleton Merchant to come trade with you
+			'''
 	}
 }
 

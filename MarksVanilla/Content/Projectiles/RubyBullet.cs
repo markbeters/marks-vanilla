@@ -11,6 +11,9 @@ namespace MarksVanilla.Content.Projectiles
 {
 	public class RubyBullet : ModProjectile
 	{
+
+		// most of this item's code was taken from the 1.4 ExampleMod
+
 		public override void SetStaticDefaults() {
 			ProjectileID.Sets.TrailCacheLength[Type] = 5; // The length of old position to be recorded
 			ProjectileID.Sets.TrailingMode[Type] = 0; // The recording mode
@@ -26,7 +29,7 @@ namespace MarksVanilla.Content.Projectiles
 			Projectile.penetrate = 2; // How many monsters the projectile can penetrate. (OnTileCollide below also decrements penetrate for bounces as well)
 			Projectile.timeLeft = 300; 
 			Projectile.alpha = 255; // The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in) Make sure to delete this if you aren't using an aiStyle that fades in. You'll wonder why your projectile is invisible.
-			Projectile.light = 0.5f; // How much light emit around the projectile
+			Projectile.light = 0.75f; // How much light emit around the projectile
 			Projectile.ignoreWater = false; 
 			Projectile.tileCollide = true;
             Projectile.extraUpdates = 0; 
@@ -37,22 +40,27 @@ namespace MarksVanilla.Content.Projectiles
 		}
 
 		public override bool OnTileCollide(Vector2 oldVelocity) {
-			// 1 pierce
-			Projectile.penetrate--;
-			if (Projectile.penetrate <= 0) {
-				Projectile.Kill();
-			}
+
+			Dust dust = Dust.NewDustDirect(Projectile.position + Projectile.velocity * Main.rand.Next(6, 10) * 0.15f, Projectile.width, Projectile.height, DustID.GemRuby, 0f, 0f, 80, Color.White, 1f);
+			dust.position.X -= 4f;
+			dust.noGravity = false;
+			dust.velocity.X *= 0.5f;
+			dust.velocity.Y = -Main.rand.Next(3, 8) * 0.1f;
+
+			Projectile.Kill();
 
 			return false;
 		}
 
-		public override bool PreDraw(ref Color lightColor) {
+		public override bool PreDraw(ref Color lightColor)
+		{
 			// Draws an afterimage trail. See https://github.com/tModLoader/tModLoader/wiki/Basic-Projectile#afterimage-trail for more information.
 
 			Texture2D texture = TextureAssets.Projectile[Type].Value;
 
 			Vector2 drawOrigin = new Vector2(texture.Width * 0.5f, Projectile.height * 0.5f);
-			for (int k = Projectile.oldPos.Length - 1; k > 0; k--) {
+			for (int k = Projectile.oldPos.Length - 1; k > 0; k--)
+			{
 				Vector2 drawPos = (Projectile.oldPos[k] - Main.screenPosition) + drawOrigin + new Vector2(0f, Projectile.gfxOffY);
 				Color color = Projectile.GetAlpha(lightColor) * ((Projectile.oldPos.Length - k) / (float)Projectile.oldPos.Length);
 				Main.EntitySpriteDraw(texture, drawPos, null, color, Projectile.rotation, drawOrigin, Projectile.scale, SpriteEffects.None, 0);
@@ -61,9 +69,21 @@ namespace MarksVanilla.Content.Projectiles
 			return true;
 		}
 
+
+		public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+		{
+
+			Dust dust = Dust.NewDustDirect(Projectile.position + Projectile.velocity * Main.rand.Next(6, 10) * 0.15f, Projectile.width, Projectile.height, DustID.GemRuby, 0f, 0f, 80, Color.White, 1f);
+			dust.position.X -= 4f;
+			dust.noGravity = false;
+			dust.velocity.X *= 0.5f;
+			dust.velocity.Y = -Main.rand.Next(3, 8) * 0.1f;
+
+		}
+		
+
 		public override void OnKill(int timeLeft) {
-			// This code and the similar code above in OnTileCollide spawn dust from the tiles collided with. SoundID.Item10 is the bounce sound you hear.
-			Collision.HitTiles(Projectile.position + Projectile.velocity, Projectile.velocity, Projectile.width, Projectile.height);
+			
 			SoundEngine.PlaySound(SoundID.Item10, Projectile.position);
 		}
 	}

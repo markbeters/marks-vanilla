@@ -1,1 +1,4 @@
-This description will show up on the steam page, check out https://steamcommunity.com/comment/Guide/formattinghelp.
+This project is intended to give some Quality of Life features to the core Terraria experience without being too "easy". 
+It also aims to provide minor balance changes to encourage the use of less common gear or setups.
+
+A full list of changes can be found in the changelog.md file in the main folder here: https://github.com/markbeters/marks-vanilla

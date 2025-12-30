@@ -152,6 +152,15 @@ Items: {
 			Calls the nearest Skeleton Merchant to come trade with you
 			'''
 	}
+
+	ViewerHotline: {
+		Tooltip:
+			'''
+			Calls the nearest Travelling Merchant to come trade with you
+			'As seen on TV!'
+			'''
+		DisplayName: Viewer Hotline
+	}
 }
 
 Buffs: {

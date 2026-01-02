@@ -47,7 +47,6 @@ namespace MarksVanilla.Content.Items.Consumables
                 .AddIngredient(ItemID.Wire, 10)
                 .AddIngredient(ItemID.CopperBar, 5) 
                 .AddTile(TileID.HeavyWorkBench)
-                .AddCondition(Condition.InGraveyard)
                 .Register();
 
             CreateRecipe()
@@ -55,7 +54,6 @@ namespace MarksVanilla.Content.Items.Consumables
                 .AddIngredient(ItemID.Wire, 10)
                 .AddIngredient(ItemID.CopperBar, 5)
                 .AddTile(TileID.HeavyWorkBench)
-                .AddCondition(Condition.InGraveyard)
                 .Register();
                 
             CreateRecipe()
@@ -63,7 +61,6 @@ namespace MarksVanilla.Content.Items.Consumables
                 .AddIngredient(ItemID.Wire, 10)
                 .AddIngredient(ItemID.TinBar, 5) 
                 .AddTile(TileID.HeavyWorkBench)
-                .AddCondition(Condition.InGraveyard)
                 .Register();
 
             CreateRecipe()
@@ -71,7 +68,6 @@ namespace MarksVanilla.Content.Items.Consumables
                 .AddIngredient(ItemID.Wire, 10)
                 .AddIngredient(ItemID.TinBar, 5)
                 .AddTile(TileID.HeavyWorkBench)
-                .AddCondition(Condition.InGraveyard)
                 .Register();
             
             // made 4 recipes to support copper/tin and silver/tungsten
